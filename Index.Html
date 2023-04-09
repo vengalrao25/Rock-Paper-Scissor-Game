@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+    <script src="Index.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="title">
+                <img src="/pictures_rockpaper/title.png">
+            </div>
+
+            <div class="score">
+                <p>SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+
+        <div class="hands">
+            <div class="hand paper">
+                <img src="/pictures_rockpaper/Paper.png" alt="paper" onclick="pickUserHand('paper')">
+            </div>
+
+            <div class="hand scissor">
+                <img src="/pictures_rockpaper/Scissors.png" alt="Scissor" onclick="pickUserHand('scissors')">
+            </div>
+
+            <div class="hand rock">
+                <img src="/pictures_rockpaper/Rock.png" alt="rock" onclick="pickUserHand('rock')">
+            </div>
+
+        </div>
+
+        <div class="contest">
+
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="userPickImage" src="/pictures_rockpaper/Scissors.png" alt="Scissor">
+                </div>
+            </div>
+
+            <div class="referee">
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                    <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+                    
+                </div>
+            </div>
+
+            <div class="computerhand">
+                <h1>THE HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                    <img id ='computerPickImage' src="/pictures_rockpaper/Scissors.png">
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
